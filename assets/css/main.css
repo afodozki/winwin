@@ -1,0 +1,95 @@
+*{
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.bg-primary{
+    background: #131a44;
+}
+.bg-primary-alt{
+    background: #293b91;
+}
+.bg-secondary{
+    background: #f7ef22;
+}
+.hover\:bg-secondary:hover {
+    background: #d4ce11;
+}
+.hover\:bg-primary:hover {
+    background: #111841;
+}
+.hover\:bg-secondary:focus {
+outline: none;
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.h-1re{
+    height: 1.4rem;
+}
+.fa-2xr {
+    font-size: 1.5em;
+}
+.m-w150{
+    min-width: 150px;
+}
+.ic-notify{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 8px;
+    text-align: center;
+    /* font-weight: bold; */
+    margin-left: -15px;
+    margin-top: -5px;
+}
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.bg-subheader{
+    background-image: url("../img/banner-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-66xl {
+    font-size: 6rem;
+}
+.lh-normal{line-height: 100%;}
+.bottom-10p{
+    bottom: 10%;
+}
+.w-ic-img{
+    width: 35px;
+}
+table {
+    border-collapse: collapse;
+    color: #6c7892;
+    font-weight: 200!important;
+}
+table td {
+    font-size: 15px;
+}
+.z-ind-sidebar{
+    z-index: 999!important;
+}
+.z-ind-modal{
+    z-index: 999999!important;
+}
+.-translate-x-full-res {
+    --transform-translate-x: -70%;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: red;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+  }
+  
+  ::placeholder {
+    color: red;
+  }
