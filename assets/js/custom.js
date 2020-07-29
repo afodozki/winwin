@@ -52,8 +52,11 @@
       speed: 900,
       infinite: true,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       centerPadding:100,
+      autoplay: true,
+      autoplaySpeed: 12000,
+      
 
       responsive: [
         {
@@ -84,6 +87,49 @@
         // instead of a settings object
       ]
     });
+    //adslide
+    $('.adslide').slick({
+      infinite: false,
+      speed: 900,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerPadding:100,
+      autoplay: true,
+  autoplaySpeed: 4000,
+
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+
+
+
 
     //trendind slides
     $('.trendingslide').slick({
@@ -91,8 +137,10 @@
       speed: 900,
       infinite: true,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       centerPadding:100,
+      autoplay: true,
+      autoplaySpeed: 8000,
 
       responsive: [
         {
@@ -132,6 +180,8 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           centerPadding:100,
+          autoplay: true,
+          autoplaySpeed: 13000,
     
           responsive: [
             {
@@ -169,8 +219,10 @@
             speed: 900,
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             centerPadding:100,
+            autoplay: true,
+            autoplaySpeed: 16000,
       
             responsive: [
               {
@@ -208,8 +260,10 @@
                       speed: 900,
                       infinite: true,
                       slidesToShow: 3,
-                      slidesToScroll: 3,
+                      slidesToScroll: 1,
                       centerPadding:100,
+                      autoplay: true,
+                      autoplaySpeed: 20000,
                 
                       responsive: [
                         {

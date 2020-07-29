@@ -98,6 +98,7 @@
 .slick-slide img
 {
     display: block;
+    border-radius: 5px;
 }
 .slick-slide.slick-loading img
 {
