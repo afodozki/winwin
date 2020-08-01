@@ -4,6 +4,41 @@
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 .bg-primary{
     background: #131a44;
@@ -47,6 +82,9 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.
 }
 .m-w150{
     min-width: 150px;
+}
+.m-w350 {
+  min-width: 350px;
 }
 .ic-notify{
     width: 17px;
@@ -347,10 +385,11 @@ table td {
 }
 
 .bg-grad-oddsone{
-    background-size: cover;
-    background-position: bottom center;
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.1) 20%, rgba(215, 187, 212, 1.93) 100%), url(/assets/img/oddsbannerone.png);
-    min-height: 450px;
+  background-size: cover;
+    background-position: top center;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.1) 20%, rgba(68, 36, 99, 1.93) 100%), url(/assets/img/img-oddback1.jpg);
+    min-height: 300px;
+    border-radius:5px;
   }
 .bg-login{
   background-image: url(/assets/img/live-action.jpg);
@@ -358,3 +397,7 @@ table td {
   background-repeat: no-repeat;
   height: 100vh;
 }
+.resize-ic{
+  width: 100px!important;
+  margin: auto;
+}    
