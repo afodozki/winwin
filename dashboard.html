@@ -5,6 +5,7 @@
       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
       <title>Naija Win Win</title>
       <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel="stylesheet" type='text/css' href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" type='text/css' href="assets/css/tailwind.min.css">
       <link rel="stylesheet" type='text/css' href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
@@ -13,20 +14,18 @@
      
   </head>
    <body class="tracking-wider tracking-normal">
-      <header>
-         <nav id="header" class=" w-full z-10 top-0 bg-primary">
-             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-4 py-4">
+      <header class=" w-full">
+         <nav id="header" class=" w-full z-10 top-0 bg-primary py-2">
+             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0">
                 <div class="p-1 flex items-center mr-6">
                 <a href="">
                   <img src="assets/img/logo.png" /> 
                 </a>
                   
                 </div>
-                <div class="block lg:hidden pr-4">
-                 
-                </div>
-                <div class="w-full flex-grow lg:flex lg:content-center lg:items-center lg:w-auto  lg:block mt-2 lg:mt-0 z-20">
-                   <div class="flex-1 w-full mx-auto content-center py-4 mr-5 lg:py-0">
+              
+                <div class="flex-grow lg:flex lg:content-center lg:items-center lg:w-auto my-2 lg:block lg:mt-0 z-20">
+                   <div class="lg:w-full md:w-full mx-auto content-center mr-5 lg:py-0">
                       <div class="relative">
                          <input type="search" placeholder="Search" class="w-full bg-gray-100 text-sm text-gray-800 transition border focus:outline-none focus:shadow-lg focus:bg-gray-300 rounded py-2 px-2 pl-3 appearance-none leading-normal">
                          <div class="absolute search-icon" style="top: 0;right: 0;">
@@ -38,45 +37,52 @@
                          </div>
                       </div>
                    </div>
-                   <ul class="list-reset flex lg:flex justify-between items-center">
-                      <li class="mr-3 py-2 flex-1 lg:py-0 inline-block">
-                         <a class="inline-block text-gray-400 text-white no-underline py-2 px-2 hover:text-gray-300 font-bold no-underline" href="#"><i class="fa fa-cog fa-2xr"></i></a>
-                      </li>
-                    
-                      <li class="flex-1 inline-block">
-                        <div class="relative inline-block">
-                           <a onclick="toggleDD('myDropdoff')" class="relative inline-block text-gray-400 text-white no-underline hover:text-gray-300 py-2 px-2" href="#"><i class="fa fa-bell fa-2xr"></i><span class="ic-notify absolute text-white align-top bg-red-500">10</span></a>
-                           <div id="myDropdoff" class="dropdownlist absolute bg-primary text-white right-0 mt-3 p-3 overflow-auto m-w350 z-30 invisible">
-                              <p class="pt-4 pb-4 pl-3 pl-3 text-gray-400 text-sm border-b border-gray-700 no-underline hover:no-underline block"> Account Upgrade Successful</p>
-                              <p class="pt-4 pb-4 pl-3 pl-3 text-gray-400 text-sm border-b border-gray-700 no-underline hover:no-underline block"> User Account Upgrade Successful</p>
-                              <p class="pt-4 pb-4 pl-3 pl-3 text-gray-400 text-sm  no-underline hover:no-underline block"> User Account Upgrade Successful</p>
-                             
-                          </div>
-                              </div>
-                          </li>
+                
+                 
+                </div>
+                <div class="block lg:pr-4 w-full lg:w-auto p-1 md:flex items-center lg:mr-6">
+                  <ul class="list-reset flex lg:flex justify-between items-center">
+                     <li class="lg:mr-3 lg:ml-3 py-2 flex-1 lg:py-0 inline-block">
+                        <a class="inline-block text-gray-400 text-white no-underline pt-2 px-2 hover:text-gray-300 font-bold no-underline" href="#"><i class="fa fa-cog fa-2xr"></i></a>
+                     </li>
+                   
+                     <li class="flex-1 inline-block">
+                       <div class="relative inline-block">
+                          <a onclick="toggleDD('myDropdoff')" class="relative inline-block text-gray-400 text-white no-underline hover:text-gray-300 pt-2 px-2" href="#"><i class="fa fa-bell fa-2xr"></i><span class="ic-notify absolute text-white align-top bg-red-500">10</span></a>
+                          <div id="myDropdoff" style="left: 0;" class="dropdownlist absolute bg-primary text-white right-0 mt-3 p-0 overflow-auto m-w350 z-30 invisible">
+                             <p class="p-3 text-gray-400 text-sm border-b border-gray-700 no-underline hover:no-underline block"> Account Upgrade Successful</p>
+                             <p class="p-3 text-gray-400 text-sm border-b border-gray-700 no-underline hover:no-underline block"> User Account Upgrade Successful</p>
+                             <p class="p-3 text-gray-400 text-sm  no-underline hover:no-underline block"> User Account Upgrade Successful</p>
+                            
+                         </div>
+                             </div>
+                         </li>
 
 
-                      <li class=" md:ml-16 inline-block">
-                        <div class="relative inline-block">
-                           <button onclick="toggleDD('myDropdown')" class="drop-button text-gray-400 focus:outline-none"> <span class="pr-2"><i class="fa fa-user-circle fa-2xr"></i></span> Hi, User <svg class="h-3 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></button>
-                                  <div id="myDropdown" class="dropdownlist absolute bg-primary text-white right-0 mt-3 p-3 overflow-auto m-w150 z-30 invisible">
-                                      <a href="dashboard.html" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fa fa-user fa-fw"></i> Account</a>
-                                      <a href="#" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fa fa-cog fa-fw"></i> Settings</a>
-                                      <div class="border border-gray-800"></div>
-                                      <a href="login.html" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a>
-                                  </div>
-                              </div>
-                          </li>
-                          <li class="flex-1 block lg:hidden md:hidden inline-block">
-                         <button id="nav-toggle" class="flex items-center px-3 py-2 ml-10 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-purple-500 appearance-none focus:outline-none">
-                           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                              <title>Menu</title>
-                              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-                           </svg>
-                        </button>     
-                          </li>
-                         
-                   </ul>
+                     <li class="flex-1 md:ml-16 inline-block">
+                       <div class="relative inline-block">
+                          <button onclick="toggleDD('myDropdown')" class="drop-button flex pt-2 text-gray-400 focus:outline-none "> <span class="pr-2"><i class="fa fa-user-circle fa-2xr"></i></span><svg class="h-3 mt-1 hidden lg:inline md:inline fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></button>
+                                 <div id="myDropdown" style="right: 0;" class="dropdownlist absolute bg-primary text-white right-0 mt-3 p-3 overflow-auto m-w150 z-30 invisible">
+                                    <p class="text-gray-400 text-sm p-2 mb-2">Hi, Username</p>
+                                     <a href="dashboard.html" class="p-2 hover:bg-primary-alt text-white text-sm no-underline hover:no-underline block"><i class="fa fa-user fa-fw"></i> Account</a>
+                                     <a href="#" class="p-2 hover:bg-primary-alt text-white text-sm no-underline hover:no-underline block"><i class="fa fa-cog fa-fw"></i> Settings</a>
+                                     <div class="border border-gray-800"></div>
+                                     <a href="login.html" class="p-2 hover:bg-primary-alt text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a>
+                                 </div>
+                             </div>
+                         </li>
+                     
+                         <li class="flex-1 inline-block lg:hidden md:hidden inline-block">
+                     
+                           <button id="nav-toggle" class="block bg-secondary flex items-center px-3 py-2 ml-10 rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-purple-500 appearance-none focus:outline-none">
+                             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                             </svg>
+                          </button>     
+                        </li>
+                        
+                  </ul>
                 </div>
              </div>
           </nav>
@@ -131,257 +137,249 @@
          </div>
      </header>
       <!--Container-->
-      <script src="https://dashboard-tailwindcomponents.netlify.app/assets/build/js/main.js?id=df2dfe6a4e2040ea9f2c"></script>
-      <div x-data="{ sidebarOpen: false }" class="flex h-screen bg-gray-200 font-roboto">
-         <div :class="sidebarOpen ? 'block' : 'hidden'" @click="sidebarOpen = false" class="fixed z-20 inset-0 bg-black z-ind-sidebar opacity-50 transition-opacity lg:hidden"></div>
-  
-         <div :class="sidebarOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'" class="fixed z-30 inset-y-0 z-ind-sidebar left-0 w-64 transition duration-300 transform bg-white overflow-y-auto lg:translate-x-0 lg:static lg:inset-0">
-             <div class="flex items-center justify-center mt-8">
-      
-             </div>
+      <div class="d-flex" id="wrapper">
 
- <nav class="mt-0">
-     <a class="flex items-center py-2 px-6 block bg-opacity-25 hover:bg-gray-200 bg-gray-200 text-gray-500 border-gray-100" href="dashboard.html">
-         <svg class="h-5 w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M2 10C2 5.58172 5.58172 2 10 2V10H18C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="currentColor"></path>
-             <path d="M12 2.25195C14.8113 2.97552 17.0245 5.18877 17.748 8.00004H12V2.25195Z" fill="currentColor"></path>
-         </svg>
+         <!-- Sidebar -->
+         <div class="bg-white shadow" id="sidebar-wrapper">
+           <div class="sidebar-heading"><button type="button" id="menu-toggle" class="btn">
+            <i class="re-ic"><img class="re-ic" src="assets/icons/align left.svg" /></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button> </div>
+           <div class="list-group list-group-flush min-h-90">
+             <a href="dashboard.html" class="list-group-item list-group-item-action bg-light">
+               <span class="fa mrdef"><img class="re-ic" src="assets/icons/dashboard.svg" /></span> <span class="h-colll">Dashboard</span>
+             </a>
+             <a href="account.html" class="list-group-item list-group-item-action bg-light">
+               <span class="fa mrdef"><img class="re-ic" src="assets/icons/account.svg" /></span> <span class="h-colll">My Account</span>
+             </a>
+             
+             <a href="merchant.html" class="list-group-item list-group-item-action bg-light">
+               <span class="fa mrdef"><img class="re-ic" src="assets/icons/messenger.svg" /></span> <span class="h-colll">Merchants</span>
+             </a>
+             <a href="bank.html" class="list-group-item list-group-item-action bg-light">
+               <span class="fa mrdef"><img class="re-ic" src="assets/icons/bank.svg" /></span> <span class="h-colll">Banks</span>
+             </a>
+             <a href="#" class="list-group-item list-group-item-action bg-light">
+               <span class="fa mrdef"><img class="re-ic" src="assets/icons/help.svg" /></span> <span class="h-colll">Help</span>
+             </a>
+           </div>
 
-         <span class="mx-4">Dashboard</span>
-     </a>
-
-     <a class="flex items-center mt-2 py-2 px-6 block text-gray-500 hover:bg-gray-200 hover:bg-opacity-25" href="account.html">
-         <svg class="h-5 w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M5 3C3.89543 3 3 3.89543 3 5V7C3 8.10457 3.89543 9 5 9H7C8.10457 9 9 8.10457 9 7V5C9 3.89543 8.10457 3 7 3H5Z" fill="currentColor"></path>
-             <path d="M5 11C3.89543 11 3 11.8954 3 13V15C3 16.1046 3.89543 17 5 17H7C8.10457 17 9 16.1046 9 15V13C9 11.8954 8.10457 11 7 11H5Z" fill="currentColor"></path>
-             <path d="M11 5C11 3.89543 11.8954 3 13 3H15C16.1046 3 17 3.89543 17 5V7C17 8.10457 16.1046 9 15 9H13C11.8954 9 11 8.10457 11 7V5Z" fill="currentColor"></path>
-             <path d="M11 13C11 11.8954 11.8954 11 13 11H15C16.1046 11 17 11.8954 17 13V15C17 16.1046 16.1046 17 15 17H13C11.8954 17 11 16.1046 11 15V13Z" fill="currentColor"></path>
-         </svg>
-
-         <span class="mx-4">My Account</span>
-     </a>
-
-     <a class="flex items-center mt-2 py-2 px-6 block text-gray-500 hover:bg-gray-200" href="merchant.html">
-         <svg class="h-5 w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M7 3C6.44772 3 6 3.44772 6 4C6 4.55228 6.44772 5 7 5H13C13.5523 5 14 4.55228 14 4C14 3.44772 13.5523 3 13 3H7Z" fill="currentColor"></path>
-             <path d="M4 7C4 6.44772 4.44772 6 5 6H15C15.5523 6 16 6.44772 16 7C16 7.55228 15.5523 8 15 8H5C4.44772 8 4 7.55228 4 7Z" fill="currentColor"></path>
-             <path d="M2 11C2 9.89543 2.89543 9 4 9H16C17.1046 9 18 9.89543 18 11V15C18 16.1046 17.1046 17 16 17H4C2.89543 17 2 16.1046 2 15V11Z" fill="currentColor"></path>
-         </svg>
-
-         <span class="mx-4">Merchants</span>
-     </a>
-
-     <a class="flex items-center mt-2 py-2 px-6 block  text-gray-500 hover:bg-gray-200" href="/bank.html">
-         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-             <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path>
-         </svg>
-
-         <span class="mx-4">Banks</span>
-     </a>
-     <a class="flex items-center mt-2 py-2 px-6 block  text-gray-500 hover:bg-gray-200 hover:bg-opacity-25 " href="/forms">
-      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path>
-      </svg>
-
-      <span class="mx-4">Help</span>
-  </a>
-
-
-  <div style="position: fixed; bottom: 0;">
-   <a class="flex items-center mt-4 py-2 px-6 block  text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 " href="/forms">
-      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path>
-      </svg>
-
-      <span class="mx-4">Logout</span>
-  </a>
-  <a class="flex items-center mt-4 py-2 px-6 block  text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100" href="/forms">
-   <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-       <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path>
-   </svg>
-
-   <span class="mx-4">Legal</span>
-</a>
-  </div>
- </nav>
-</div>            
-         <div class="flex-1 flex flex-col overflow-hidden">
-           
-             <main class="flex-1 bg-white overflow-y-auto">
-
-               <header class="flex justify-between items-center p-20 bg-subheader">
+           <div class="footer-sidelist">
+            <ul>
+             <li>
+               <a href="login.html" class="list-group-item list-group-item-action bg-light">
+                  <span class="h-colll">Logout</span>
+                </a>
+             </li> 
+   
+             <li>
+               <a href="#" class="list-group-item list-group-item-action bg-light">
+                  <span class="h-colll">Legal</span>
+                </a>
+             </li> 
+   
+            </ul>
+   
+           </div>
+         </div>
+         <!-- /#sidebar-wrapper -->
+     
+         <!-- Page Content -->
+         <div id="page-content-wrapper">
+     
+           <div class="container-fluid">
+            <header class="flex justify-between items-center p-20 bg-subheader">
          
-               </header>
-                 <div class="container mx-auto px-6 py-8 -mt-20 z-50">
-                  <div class="w-full flex flex-col md:flex-row lg:flex-row w-full rounded-lg">
-                     <div class=" max-w-sm w-full md:w-1/3 bg-white shadow-md rounded-lg mb-3 overflow-hidden ml-3">
-                            <button @click="sidebarOpen = true" class="text-gray-500 focus:outline-none lg:hidden">
-         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M4 6H20M4 12H20M4 18H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-         </svg>
-     </button>
-                        <div class="-mx-3 py-4 px-10">
-                            <div class="mx-0">
-                                <p class="text-lg text-gray-500">Bets Played</p>
-                                <div class="w-full flex flex-row rounded-lg">
-                                 <h1 class="text-gray-900 mt-0 pt-0 text-66xl font-bold lh-normal w-3/4">34</h1>
-                                    <span class="text-gray-900 mt-0 text-6xl lh-normal w-1/4 pt-10"><i class=" bottom-10p"><img class="w-ic-img" src="/assets/img/ic-played.png"/></i></span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                 
-                    </div>
-                    <div class=" max-w-sm w-full md:w-1/3 bg-white shadow-md rounded-lg mb-3 overflow-hidden ml-3">
-                        
+            </header>
+              <div class="container mx-auto px-0 py-8 -mt-20 z-50">
+               <div class="w-full flex flex-col md:flex-row lg:flex-row w-full rounded-lg">
+                  <div class=" max-w-sm w-full md:w-1/3 bg-white shadow-md rounded-lg mb-3 overflow-hidden ml-3">
+                         <button @click="sidebarOpen = true" class="text-gray-500 focus:outline-none lg:hidden">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H20M4 18H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
                      <div class="-mx-3 py-4 px-10">
                          <div class="mx-0">
-                             <p class="text-lg text-gray-500">Payouts Received</p>
+                             <p class="text-lg text-gray-500">Bets Played</p>
                              <div class="w-full flex flex-row rounded-lg">
                               <h1 class="text-gray-900 mt-0 pt-0 text-66xl font-bold lh-normal w-3/4">34</h1>
-                                 <span class="text-gray-900 mt-0 text-6xl lh-normal w-1/4 pt-10"><i class=" bottom-10p"><img class="w-ic-img" src="/assets/img/ic-received.png"/></i></span>
+                                 <span class="text-gray-900 mt-0 text-6xl lh-normal w-1/4 pt-10"><i class=" bottom-10p"><img class="w-ic-img" src="/assets/img/ic-played.png"/></i></span>
                              </div>
-
+            
                          </div>
                      </div>
-
+            
               
                  </div>
-    
                  <div class=" max-w-sm w-full md:w-1/3 bg-white shadow-md rounded-lg mb-3 overflow-hidden ml-3">
-                        
+                     
                   <div class="-mx-3 py-4 px-10">
                       <div class="mx-0">
-                          <p class="text-lg text-gray-500">Merchants Added</p>
+                          <p class="text-lg text-gray-500">Payouts Received</p>
                           <div class="w-full flex flex-row rounded-lg">
                            <h1 class="text-gray-900 mt-0 pt-0 text-66xl font-bold lh-normal w-3/4">34</h1>
-                              <span class="text-gray-900 mt-0 text-6xl lh-normal w-1/4 pt-10"><i class=" bottom-10p"><img class="w-ic-img" src="/assets/img/ic-merchant.png"/></i></span>
+                              <span class="text-gray-900 mt-0 text-6xl lh-normal w-1/4 pt-10"><i class=" bottom-10p"><img class="w-ic-img" src="/assets/img/ic-received.png"/></i></span>
                           </div>
-
+            
                       </div>
                   </div>
-
-           
+            
+            
               </div>
-
-                  </div>
-
-
-
-  <div class="w-full flex flex-col md:flex-row lg:flex-row w-full mt-4 rounded-lg">
-                     <div class=" w-full bg-white shadow-md rounded-lg overflow-x-auto">
-                        <h4 class="text-gray-600 mx-5 mt-10 mb-5">MY WINWIN</h4>
-                       
+            
+              <div class=" max-w-sm w-full md:w-1/3 bg-white shadow-md rounded-lg mb-3 overflow-hidden ml-3">
                      
-                           <div class="flex justify-center">
-                               <table class="w-full text-md bg-white rounded">
-                                   <tbody>
-                                       <tr class="border-b">
-                                           <th class="text-left p-3 px-5 font-normal text-gray-500">MERCHANT</th>
-                                           <th class="text-left p-3 px-5 font-normal text-gray-500">WINWIN ID</th>
-                                           <th class="text-left p-3 px-5 font-normal text-gray-500">BANK</th>
-                                           <th class="text-left p-3 px-5 font-normal text-gray-500">TIER</th>
-                                       </tr>
-                                       <tr class="border-b hover:bg-gray-100 bg-gray-100">
-                                           <td class="p-3 px-5 font-thin">Bet9ja</td>
-                                           <td class="p-3 px-5 font-thin">ST35DE</td>
-                                           <td class="p-3 px-5 font-thin">Sterling Bank</td>
-                                           <td class="p-3 px-5 font-thin">Basic</td>
-                                           
-                                       </tr>
-                                       <tr class="border-b hover:bg-gray-100">
-                                          <td class="p-3 px-5 font-thin">Bet9ja</td>
-                                          <td class="p-3 px-5 font-thin">ST35DE</td>
-                                          <td class="p-3 px-5 font-thin">Sterling Bank</td>
-                                          <td class="p-3 px-5 font-thin">Basic</td>
-                                       </tr>
-                                       
-                                       <tr class="border-b hover:bg-gray-100">
-                                          <td class="p-3 px-5 font-thin">Bet9ja</td>
-                                          <td class="p-3 px-5 font-thin">ST35DE</td>
-                                          <td class="p-3 px-5 font-thin">Sterling Bank</td>
-                                          <td class="p-3 px-5 font-thin">Basic</td>
-                                       </tr>
-                                       <tr class="border-b hover:bg-gray-100">
-                                          <td class="p-3 px-5 font-thin">Bet9ja</td>
-                                          <td class="p-3 px-5 font-thin">ST35DE</td>
-                                          <td class="p-3 px-5 font-thin">Sterling Bank</td>
-                                          <td class="p-3 px-5 font-thin">Basic</td>
-                                       </tr>
-                                       <tr class="border-b hover:bg-gray-100">
-                                          <td class="p-3 px-5 font-thin">Bet9ja</td>
-                                          <td class="p-3 px-5 font-thin">ST35DE</td>
-                                          <td class="p-3 px-5 font-thin">Sterling Bank</td>
-                                          <td class="p-3 px-5 font-thin">Basic</td>
-                                       </tr>
-                                       <tr class="border-b hover:bg-gray-100">
-                                          <td class="p-3 px-5 font-thin">Bet9ja</td>
-                                          <td class="p-3 px-5 font-thin">ST35DE</td>
-                                          <td class="p-3 px-5 font-thin">Sterling Bank</td>
-                                          <td class="p-3 px-5 font-thin">Basic</td>
-                                       </tr>
-                                       <tr class="border-b hover:bg-gray-100">
-                                          <td class="p-3 px-5 font-thin">Bet9ja</td>
-                                          <td class="p-3 px-5 font-thin">ST35DE</td>
-                                          <td class="p-3 px-5 font-thin">Sterling Bank</td>
-                                          <td class="p-3 px-5 font-thin">Basic</td>
-                                       </tr>
-                                       <tr class="border-b hover:bg-gray-100">
-                                          <td class="p-3 px-5 font-thin">Bet9ja</td>
-                                          <td class="p-3 px-5 font-thin">ST35DE</td>
-                                          <td class="p-3 px-5 font-thin">Sterling Bank</td>
-                                          <td class="p-3 px-5 font-thin">Basic</td>
-                                       </tr>
-                                   </tbody>
-                               </table>
-                           
+               <div class="-mx-3 py-4 px-10">
+                   <div class="mx-0">
+                       <p class="text-lg text-gray-500">Merchants Added</p>
+                       <div class="w-full flex flex-row rounded-lg">
+                        <h1 class="text-gray-900 mt-0 pt-0 text-66xl font-bold lh-normal w-3/4">34</h1>
+                           <span class="text-gray-900 mt-0 text-6xl lh-normal w-1/4 pt-10"><i class=" bottom-10p"><img class="w-ic-img" src="/assets/img/ic-merchant.png"/></i></span>
+                       </div>
+            
+                   </div>
+               </div>
+            
+            
+            </div>
+            
+               </div>
+            
+            
+            
+            <div class="w-full flex flex-col md:flex-row lg:flex-row w-full mt-4 rounded-lg">
+                  <div class=" w-full bg-white shadow-md rounded-lg overflow-x-auto">
+                     <h4 class="text-gray-600 mx-5 mt-10 mb-5">MY WINWIN</h4>
+                    
+                  
+                        <div class="flex justify-center">
+                            <table class="w-full text-md bg-white rounded">
+                                <tbody>
+                                    <tr class="border-b">
+                                        <th class="text-left p-3 px-5 font-normal text-gray-500">MERCHANT</th>
+                                        <th class="text-left p-3 px-5 font-normal text-gray-500">WINWIN ID</th>
+                                        <th class="text-left p-3 px-5 font-normal text-gray-500">BANK</th>
+                                        <th class="text-left p-3 px-5 font-normal text-gray-500">TIER</th>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-100 bg-gray-100">
+                                        <td class="p-3 px-5 font-thin">Bet9ja</td>
+                                        <td class="p-3 px-5 font-thin">ST35DE</td>
+                                        <td class="p-3 px-5 font-thin">Sterling Bank</td>
+                                        <td class="p-3 px-5 font-thin">Basic</td>
+                                        
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-100">
+                                       <td class="p-3 px-5 font-thin">Bet9ja</td>
+                                       <td class="p-3 px-5 font-thin">ST35DE</td>
+                                       <td class="p-3 px-5 font-thin">Sterling Bank</td>
+                                       <td class="p-3 px-5 font-thin">Basic</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b hover:bg-gray-100">
+                                       <td class="p-3 px-5 font-thin">Bet9ja</td>
+                                       <td class="p-3 px-5 font-thin">ST35DE</td>
+                                       <td class="p-3 px-5 font-thin">Sterling Bank</td>
+                                       <td class="p-3 px-5 font-thin">Basic</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-100">
+                                       <td class="p-3 px-5 font-thin">Bet9ja</td>
+                                       <td class="p-3 px-5 font-thin">ST35DE</td>
+                                       <td class="p-3 px-5 font-thin">Sterling Bank</td>
+                                       <td class="p-3 px-5 font-thin">Basic</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-100">
+                                       <td class="p-3 px-5 font-thin">Bet9ja</td>
+                                       <td class="p-3 px-5 font-thin">ST35DE</td>
+                                       <td class="p-3 px-5 font-thin">Sterling Bank</td>
+                                       <td class="p-3 px-5 font-thin">Basic</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-100">
+                                       <td class="p-3 px-5 font-thin">Bet9ja</td>
+                                       <td class="p-3 px-5 font-thin">ST35DE</td>
+                                       <td class="p-3 px-5 font-thin">Sterling Bank</td>
+                                       <td class="p-3 px-5 font-thin">Basic</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-100">
+                                       <td class="p-3 px-5 font-thin">Bet9ja</td>
+                                       <td class="p-3 px-5 font-thin">ST35DE</td>
+                                       <td class="p-3 px-5 font-thin">Sterling Bank</td>
+                                       <td class="p-3 px-5 font-thin">Basic</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-100">
+                                       <td class="p-3 px-5 font-thin">Bet9ja</td>
+                                       <td class="p-3 px-5 font-thin">ST35DE</td>
+                                       <td class="p-3 px-5 font-thin">Sterling Bank</td>
+                                       <td class="p-3 px-5 font-thin">Basic</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                        </div>
+                        <div class="mt-4 flex justify-end">
+                           <div class="flex rounded-md bg-white py-4 px-4 overflow-x-auto">
+                               <div class="flex rounded mr-4">
+                                   <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary border-r-0 ml-0 rounded-l hover:bg-primary-alt hover:text-white"><span>Previous</span></a>
+                                   <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary border-r-0 hover:bg-primary-alt hover:text-white"><span>1</span></a>
+                                   <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary border-r-0 hover:bg-primary-alt hover:text-white"><span>2</span></a>
+                                   <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary border-r-0 hover:bg-primary-alt hover:text-white"><span>3</span></a>
+                                   <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary rounded-r hover:bg-primary-alt hover:text-white"><span>Next</span></a>
+                               </div>
                            </div>
-                           <div class="mt-4 flex justify-end">
-                              <div class="flex rounded-md bg-white py-4 px-4 overflow-x-auto">
-                                  <div class="flex rounded mr-4">
-                                      <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary border-r-0 ml-0 rounded-l hover:bg-primary-alt hover:text-white"><span>Previous</span></a>
-                                      <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary border-r-0 hover:bg-primary-alt hover:text-white"><span>1</span></a>
-                                      <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary border-r-0 hover:bg-primary-alt hover:text-white"><span>2</span></a>
-                                      <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary border-r-0 hover:bg-primary-alt hover:text-white"><span>3</span></a>
-                                      <a href="#" class="py-2 px-3 leading-tight bg-white border border-gray-200 text-primary rounded-r hover:bg-primary-alt hover:text-white"><span>Next</span></a>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
+                       </div>
                      </div>
-
-                     <div class="w-full flex justify-between mt-10 mb-5">
-                        <h2 class="font-bold break-normal text-gray-900 text-2xl md:text-xl">FROM YOUR MERCHANTS</h2>
-                        <button class="-mt-2 bg-transparent hover:shadow-lg hover:bg-gray-200 focus:outline-none text-primary font-semibold  hover:bg-gray-200 py-2 px-4 border border-primary px-8 rounded">
-                           MORE
-                         </button>
+                  </div>
+            
+                  <div class="w-full flex justify-between mt-10 mb-5">
+                     <h2 class="font-bold break-normal text-gray-900 text-2xl md:text-xl">FROM YOUR MERCHANTS</h2>
+                     <button class="-mt-2 bg-transparent hover:shadow-lg hover:bg-gray-200 focus:outline-none text-primary font-semibold  hover:bg-gray-200 py-2 px-4 border border-primary px-8 rounded">
+                        MORE
+                      </button>
+                  </div>
+                  <div class="grid mx-auto  grid-cols-4  gap-4 merchantslide">
+                     <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
+                     <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
+                     <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
+                     <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
+                     <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
+                     <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
+                     <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
+                     <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
+                  
+                   </div>
+            
+                   <div class="w-full flex flex-wrap mt-10 mx-auto">
+            
+                     <div class="grid grid-cols-1">
+                        <img src="assets/img/bannerone.png" />
                      </div>
-                     <div class="grid mx-auto  grid-cols-4  gap-4 merchantslide">
-                        <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
-                        <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
-                        <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
-                        <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
-                        <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
-                        <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
-                        <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
-                        <div class="w-full md:w-1/3 xl:w-1/3 "><a href="#"> <img class="hover:grow hover:shadow-lg" src="assets/img/thisweekbannerone.png" /> </a></div>
-                     
-                      </div>
-
-                      <div class="w-full flex flex-wrap mt-10 mx-auto">
-      
-                        <div class="grid grid-cols-1">
-                           <img src="assets/img/bannerone.png" />
-                        </div>
-                     </div>
-
-                 </div>
-             </main>
+                  </div>
+            
+              </div>
+           </div>
          </div>
-     </div>
+         <!-- /#page-content-wrapper -->
+     
+       </div>
+         <!-- Page Content  -->
+       
+
+            
+            
+            
+         
+
+    
+            
+
+
+
+
+
+
+
      <footer class="bg-primary ">
-      <div class="container mx-auto mt-8">
+      <div class="container-fluid mx-auto mt-8">
         <div class="w-full flex flex-wrap md:flex-row pt-16">
           <div class="w-1/2 md:w-1/4 sm:w-1/2 mb-6 px-4">
             <a class="text-orange-600 no-underline hover:no-underline font-bold mb-5 text-2xl lg:text-4xl" href="#">
@@ -447,6 +445,7 @@
   
        <script type="text/javascript" src="assets/js/jquery.js"></script>
        <script type="text/javascript" src="assets/js/slick.min.js"></script>
+       <script type="text/javascript" src='assets/js/main.js'></script>
        <script type="text/javascript" src='assets/js/custom.js'></script>
    </body>
 </html>
