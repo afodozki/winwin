@@ -48,7 +48,6 @@
    /** Odds slider**/
    $(document).ready(function(){
     $('.oddslide').slick({
-      infinite: false,
       speed: 900,
       infinite: true,
       slidesToShow: 4,

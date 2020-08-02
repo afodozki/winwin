@@ -1700,8 +1700,19 @@ pre code {
         border: 0;
     }
 }
+.inline-b-resp{
+    display:flex
+}
 @media (max-width: 767.98px) {
-
+    .mt-2-resp-only{
+        margin-top: 10px;
+    }
+    .inline-b-resp{
+        display: inline-block;
+    }
+    .r-mauto{
+        margin: auto!important;
+    }
     .slick-prev:before {
         padding: 5px;
         background: #fff;
@@ -2876,6 +2887,7 @@ input[type="submit"].btn-block {
 .dropdown-toggle {
     white-space: nowrap;
 }
+/*
 .dropdown-toggle::after {
     display: inline-block;
     margin-left: 0.255em;
@@ -2886,6 +2898,7 @@ input[type="submit"].btn-block {
     border-bottom: 0;
     border-left: 0.3em solid transparent;
 }
+*/
 .dropdown-toggle:empty::after {
     margin-left: 0;
 }

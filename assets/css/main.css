@@ -1,9 +1,4 @@
-*{
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -59,10 +54,10 @@
     background: #293b91;
 }
 .bg-secondary{
-    background: #ffdd17;
+    background: #f7ef22;
 }
 .text-secondary{
-    color: #ffdd17;
+    color: #f7ef22;
 }
 .hover\:bg-secondary:hover {
     background: #d4ce11;
@@ -147,7 +142,9 @@ table td {
   ::placeholder {
     color: red;
   }
-
+  .pr-6 {
+    padding-right: 4rem !important;
+}
 
   /*****Toogle switches******/
   
@@ -378,7 +375,7 @@ table td {
     top: 3px;
     width: 7px;
     height: 13px;
-    border: solid #ffdd17;
+    border: solid #f7ef22;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -535,7 +532,7 @@ a[data-toggle="collapse"] {
   transition: all 0.3s; }
 
 .re-ic{
-  width: 20px;
+  width: 15px;
   margin-right: 0;
   display: block;
   font-size: 20px;

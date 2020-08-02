@@ -14,128 +14,117 @@
      
   </head>
    <body class="tracking-wider tracking-normal">
-      <header class=" w-full">
-         <nav id="header" class=" w-full z-10 top-0 bg-primary py-2">
-             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0">
-                <div class="p-1 flex items-center mr-6">
-                <a href="/">
-                  <img src="assets/img/logo.png" /> 
-                </a>
-                  
-                </div>
-              
-                <div class="flex-grow lg:flex lg:content-center lg:items-center lg:w-auto my-2 lg:block lg:mt-0 z-20">
-                   <div class="lg:w-full md:w-full mx-auto content-center mr-5 lg:py-0">
-                      <div class="relative">
-                         <input type="search" placeholder="Search" class="w-full bg-gray-100 text-sm text-gray-800 transition border focus:outline-none focus:shadow-lg focus:bg-gray-300 rounded py-2 px-2 pl-3 appearance-none leading-normal">
-                         <div class="absolute search-icon" style="top: 0;right: 0;">
-                            <button class="bg-secondary hover:bg-secondary focus:bg-secondary text-white font-bold py-2 px-4 rounded">
-                              <svg class="fill-current pointer-events-none text-gray-800 w-4 h-1re" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                 <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
-                              </svg>
-                            </button>
-                         </div>
-                      </div>
-                   </div>
-                
+      <header class="w-full z-10 top-0 bg-primary py-1">
+         <nav class="navbar container navbar-expand-lg"> 
+            <a href="/" class="navbar-brand r-mauto" href="#" data-abc="true">
+               <img src="assets/img/logo.png" /> 
+            </a> 
+         
+         <div class="row w-full">
+            <div class="col-lg-9">
+               <input type="search" placeholder="Search games, odds or leagues" class="w-full bg-gray-100 text-sm text-gray-800 transition border focus:outline-none focus:shadow-lg focus:bg-gray-300 rounded py-2 px-2 pl-3 appearance-none leading-normal pr-6">
+               <div class="absolute search-icon" style="top: 0.4px;right: 15px;">
+                  <button class="bg-secondary hover:bg-secondary focus:bg-secondary text-white font-bold py-2 px-4 rounded">
+                    <svg class="fill-current pointer-events-none text-gray-800 w-4 h-1re" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                       <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
+                    </svg>
+                  </button>
+               </div>
+            </div>
+            <div class="col-lg-3">
+               <ul class=" mr-auto mt-2-resp-only row">
+                  <li class="nav-item px-3 col-4 text-center active"> 
+                   <div class="dropdown">
                  
-                </div>
-                <div class="block lg:pr-4 w-full lg:w-auto p-1 md:flex items-center lg:mr-6">
-                  <ul class="list-reset flex lg:flex justify-between items-center">
-                     <li class="lg:mr-3 lg:ml-3 py-2 flex-1 lg:py-0 inline-block">
-                        <a class="inline-block text-gray-400 text-white no-underline pt-2 px-2 hover:text-gray-300 font-bold no-underline" href="#"><i class="fa fa-cog fa-2xr"></i></a>
-                     </li>
-                   
-                     <li class="flex-1 inline-block">
-                       <div class="relative inline-block">
-                          <a onclick="toggleDD('myDropdoff')" class="relative inline-block text-gray-400 text-white no-underline hover:text-gray-300 pt-2 px-2" href="#"><i class="fa fa-bell fa-2xr"></i><span class="ic-notify absolute text-white align-top bg-red-500">10</span></a>
-                          <div id="myDropdoff" style="left: 0;" class="dropdownlist absolute bg-primary text-white right-0 mt-3 p-0 overflow-auto m-w350 z-30 invisible">
-                             <p class="p-3 text-gray-400 text-sm border-b border-gray-700 no-underline hover:no-underline block"> Account Upgrade Successful</p>
-                             <p class="p-3 text-gray-400 text-sm border-b border-gray-700 no-underline hover:no-underline block"> User Account Upgrade Successful</p>
-                             <p class="p-3 text-gray-400 text-sm  no-underline hover:no-underline block"> User Account Upgrade Successful</p>
-                            
-                         </div>
-                             </div>
-                         </li>
-
-
-                     <li class="flex-1 md:ml-16 inline-block">
-                       <div class="relative inline-block">
-                          <button onclick="toggleDD('myDropdown')" class="drop-button flex pt-2 text-gray-400 focus:outline-none "> <span class="pr-2"><i class="fa fa-user-circle fa-2xr"></i></span><svg class="h-3 mt-1 hidden lg:inline md:inline fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></button>
-                                 <div id="myDropdown" style="right: 0;" class="dropdownlist absolute bg-primary text-white right-0 mt-3 p-3 overflow-auto m-w150 z-30 invisible">
-                                    <p class="text-gray-400 text-sm p-2 mb-2">Hi, Username</p>
-                                     <a href="dashboard.html" class="p-2 hover:bg-primary-alt text-white text-sm no-underline hover:no-underline block"><i class="fa fa-user fa-fw"></i> Account</a>
-                                     <a href="#" class="p-2 hover:bg-primary-alt text-white text-sm no-underline hover:no-underline block"><i class="fa fa-cog fa-fw"></i> Settings</a>
-                        
-                                     <a href="login.html" class="p-2 hover:bg-primary-alt text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> <i class="fa fa-lock fa-fw"></i> Log Out</a>
-                                 </div>
-                             </div>
-                         </li>
-                     
-                         <li class="flex-1 inline-block lg:hidden md:hidden inline-block">
-                     
-                           <button id="nav-toggle" class="block bg-secondary flex items-center px-3 py-2 ml-10 rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-purple-500 appearance-none focus:outline-none">
-                             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <title>Menu</title>
-                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-                             </svg>
-                          </button>     
-                        </li>
-                        
-                  </ul>
-                </div>
-             </div>
-          </nav>
-          <div id="nav-content" class="w-full bg-primary-alt shadow-md hidden lg:block md:block">
-            <ul class="container mx-auto list-reset flex:column lg:flex md:flex xs:flex text-xs bounce-in-right">
-           
-               <li class="mr-6 text-gray-200">
-                  <a href="#" class="p-3 block hover:bg-primary">
-                     <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M6 6V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4v4a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h4zm2 0h4a2 2 0 0 1 2 2v4h4V2H8v4zM2 8v10h10V8H2z"></path>
-                     </svg>
-                     My WINWIN</a>
-               </li>
-               <li class="mr-6 text-gray-200">
-                  <a href="#" class="p-3 block hover:bg-primary">
-                     <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M3.94 6.5L2.22 3.64l1.42-1.42L6.5 3.94c.52-.3 1.1-.54 1.7-.7L9 0h2l.8 3.24c.6.16 1.18.4 1.7.7l2.86-1.72 1.42 1.42-1.72 2.86c.3.52.54 1.1.7 1.7L20 9v2l-3.24.8c-.16.6-.4 1.18-.7 1.7l1.72 2.86-1.42 1.42-2.86-1.72c-.52.3-1.1.54-1.7.7L11 20H9l-.8-3.24c-.6-.16-1.18-.4-1.7-.7l-2.86 1.72-1.42-1.42 1.72-2.86c-.3-.52-.54-1.1-.7-1.7L0 11V9l3.24-.8c.16-.6.4-1.18.7-1.7zM10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                     </svg>
-                     FAQ's</a>
-               </li>
-               <li class="mr-6 text-gray-200">
-                  <a href="#" class="p-3 block hover:bg-primary">
-                     <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7.88 7.88l-3.54 7.78 7.78-3.54 3.54-7.78-7.78 3.54zM10 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
-                     </svg>
-                     Help</a>
-               </li>
-               <li class="mr-6 text-gray-200">
-                  <a href="#" class="p-3 block hover:bg-primary">
-                     <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7.88 7.88l-3.54 7.78 7.78-3.54 3.54-7.78-7.78 3.54zM10 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
-                     </svg>
-                     Become an Agent</a>
-               </li>
-               <li class="mr-6 text-gray-200">
-                  <a href="#" class="p-3 block hover:bg-primary">
-                     <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7.88 7.88l-3.54 7.78 7.78-3.54 3.54-7.78-7.78 3.54zM10 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
-                     </svg>
-                     Blog </a>
-               </li>
-               <li class="mr-6 text-gray-200">
-                  <a href="#" class="p-3 block hover:bg-primary">
-                     <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7.88 7.88l-3.54 7.78 7.78-3.54 3.54-7.78-7.78 3.54zM10 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
-                     </svg>
-                     WINWIN Promos </a>
-               </li>
-      
-            
-            </ul>
+                      <a class="relative inline-block dropdown-toggle text-gray-400 text-white no-underline hover:text-gray-300 pt-2 px-2" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fa fa-bell fa-2xr"></i><span class="ic-notify absolute text-white align-top bg-red-500">10</span></a>
+                      <div style="min-width: 200px;" class="dropdown-menu bg-primary dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                         <p class="p-3 text-gray-400 text-sm border-b border-gray-700 no-underline hover:no-underline block"> Account Upgrade Successful</p>
+                                    <p class="p-3 text-gray-400 text-sm border-b border-gray-700 no-underline hover:no-underline block"> User Account Upgrade Successful</p>
+                                    <p class="p-3 text-gray-400 text-sm  no-underline hover:no-underline block"> User Account Upgrade Successful</p>
+                      </div>
+                    </div>     
+                </li>
+                  <li class="nav-item col-4 text-center px-3"> 
+                   <div class="dropdown show">
+                      <button class="drop-button pt-2 inline-b-resp text-gray-400 focus:outline-none" id="dropdownMenuLink" data-toggle="dropdown"> <span class="pr-2"><i class="fa fa-user-circle fa-2xr"></i></span><svg class="h-3 mt-1 hidden lg:inline md:inline fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></button>
+                    
+                      <div class="dropdown-menu bg-primary dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                         <p class="text-gray-400 text-sm p-2 mb-2">Hi, Username</p>
+                         <a href="dashboard.html" class="p-2 hover:bg-primary-alt text-white text-sm no-underline hover:no-underline block"><i class="fa fa-user fa-fw"></i> Account</a>
+                         <a href="#" class="p-2 hover:bg-primary-alt text-white text-sm no-underline hover:no-underline block"><i class="fa fa-cog fa-fw"></i> Settings</a>
+                       
+                         <a href="login.html" class="p-2 hover:bg-primary-alt text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> <i class="fa fa-lock fa-fw"></i> Log Out</a>
+                      </div>
+                    </div>     
+                
+                </li>
+                <li class="nav-item col-4 text-center px-3">
+                   <button class="navbar-toggler block bg-secondary flex items-center px-3 py-2 ml-10 rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-purple-500 appearance-none focus:outline-none" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">  <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <title>Menu</title>
+                      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                   </svg></button>   
+                </li>
+             
+                  
+              </ul>
+            </div>
+         
+         
          </div>
-     </header>
+            
+         </nav>
+         <div class="collapse navbar-collapse" id="navbarColor02">
+            <div  class="w-full bg-primary-alt shadow-md  lg:block md:block">
+               <ul class="container mx-auto list-reset flex:column lg:flex md:flex xs:flex text-xs bounce-in-right">
+              
+                  <li class="mr-6 text-gray-200">
+                     <a href="#" class="p-3 block hover:bg-primary">
+                        <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                           <path d="M6 6V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4v4a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h4zm2 0h4a2 2 0 0 1 2 2v4h4V2H8v4zM2 8v10h10V8H2z"></path>
+                        </svg>
+                        My WINWIN</a>
+                  </li>
+                  <li class="mr-6 text-gray-200">
+                     <a href="#" class="p-3 block hover:bg-primary">
+                        <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                           <path d="M3.94 6.5L2.22 3.64l1.42-1.42L6.5 3.94c.52-.3 1.1-.54 1.7-.7L9 0h2l.8 3.24c.6.16 1.18.4 1.7.7l2.86-1.72 1.42 1.42-1.72 2.86c.3.52.54 1.1.7 1.7L20 9v2l-3.24.8c-.16.6-.4 1.18-.7 1.7l1.72 2.86-1.42 1.42-2.86-1.72c-.52.3-1.1.54-1.7.7L11 20H9l-.8-3.24c-.6-.16-1.18-.4-1.7-.7l-2.86 1.72-1.42-1.42 1.72-2.86c-.3-.52-.54-1.1-.7-1.7L0 11V9l3.24-.8c.16-.6.4-1.18.7-1.7zM10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                        </svg>
+                        FAQ's</a>
+                  </li>
+                  <li class="mr-6 text-gray-200">
+                     <a href="#" class="p-3 block hover:bg-primary">
+                        <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                           <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7.88 7.88l-3.54 7.78 7.78-3.54 3.54-7.78-7.78 3.54zM10 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                        </svg>
+                        Help</a>
+                  </li>
+                  <li class="mr-6 text-gray-200">
+                     <a href="#" class="p-3 block hover:bg-primary">
+                        <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                           <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7.88 7.88l-3.54 7.78 7.78-3.54 3.54-7.78-7.78 3.54zM10 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                        </svg>
+                        Become an Agent</a>
+                  </li>
+                  <li class="mr-6 text-gray-200">
+                     <a href="#" class="p-3 block hover:bg-primary">
+                        <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                           <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7.88 7.88l-3.54 7.78 7.78-3.54 3.54-7.78-7.78 3.54zM10 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                        </svg>
+                        Blog </a>
+                  </li>
+                  <li class="mr-6 text-gray-200">
+                     <a href="#" class="p-3 block hover:bg-primary">
+                        <svg class="inline fill-current text-teal-lightest h-4 pr-1 md:pr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                           <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7.88 7.88l-3.54 7.78 7.78-3.54 3.54-7.78-7.78 3.54zM10 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                        </svg>
+                        WINWIN Promos </a>
+                  </li>
+            
+               
+               </ul>
+            </div>
+         </div>
+         </header>
       <!--Container-->
       <div class="d-flex" id="wrapper">
 
@@ -147,20 +136,20 @@
           </button> </div>
            <div class="list-group mt-4 list-group-flush min-h-90">
              <a href="dashboard.html" class="list-group-item list-group-item-action active">
-               <span class="fa mrdef"><img class="re-ic" src="assets/icons/dashboard.svg" /></span> <span class="h-colll">Dashboard</span>
+               <span class="fa mrdef"><img class="re-ic" src="assets/img/icons/dashboard.svg" /></span> <span class="h-colll">Dashboard</span>
              </a>
              <a href="account.html" class="list-group-item list-group-item-action">
-               <span class="fa mrdef"><img class="re-ic" src="assets/icons/account.svg" /></span> <span class="h-colll">My Account</span>
+               <span class="fa mrdef"><img class="re-ic" src="assets/img/icons/account circle.svg" /></span> <span class="h-colll">My Account</span>
              </a>
              
              <a href="merchant.html" class="list-group-item list-group-item-action">
-               <span class="fa mrdef"><img class="re-ic" src="assets/icons/messenger.svg" /></span> <span class="h-colll">Merchants</span>
+               <span class="fa mrdef"><img class="re-ic" src="assets/img/icons/Merchant.svg" /></span> <span class="h-colll">Merchants</span>
              </a>
              <a href="bank.html" class="list-group-item list-group-item-action">
-               <span class="fa mrdef"><img class="re-ic" src="assets/icons/bank.svg" /></span> <span class="h-colll">Banks</span>
+               <span class="fa mrdef"><img class="re-ic" src="assets/img/icons/bank.svg" /></span> <span class="h-colll">Banks</span>
              </a>
              <a href="#" class="list-group-item list-group-item-action">
-               <span class="fa mrdef"><img class="re-ic" src="assets/icons/help.svg" /></span> <span class="h-colll">Help</span>
+               <span class="fa mrdef"><img class="re-ic" src="assets/img/icons/Help(FAQ).svg" /></span> <span class="h-colll">Help</span>
              </a>
            </div>
 
@@ -444,6 +433,7 @@
 
   
        <script type="text/javascript" src="assets/js/jquery.js"></script>
+       <script type="text/javascript" src="assets/js/bootstrap.js"></script>
        <script type="text/javascript" src="assets/js/slick.min.js"></script>
        <script type="text/javascript" src='assets/js/main.js'></script>
        <script type="text/javascript" src='assets/js/custom.js'></script>
