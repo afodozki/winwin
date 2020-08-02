@@ -145,21 +145,21 @@
             <i class="re-ic"><img class="re-ic" src="assets/icons/align left.svg" /></i>
             <span class="sr-only">Toggle Menu</span>
           </button> </div>
-           <div class="list-group list-group-flush min-h-90">
-             <a href="dashboard.html" class="list-group-item list-group-item-action bg-light">
+           <div class="list-group list-group-flush mt-4 min-h-90">
+             <a href="dashboard.html" class="list-group-item list-group-item-action">
                <span class="fa mrdef"><img class="re-ic" src="assets/icons/dashboard.svg" /></span> <span class="h-colll">Dashboard</span>
              </a>
-             <a href="account.html" class="list-group-item list-group-item-action bg-light">
+             <a href="account.html" class="list-group-item list-group-item-action">
                <span class="fa mrdef"><img class="re-ic" src="assets/icons/account.svg" /></span> <span class="h-colll">My Account</span>
              </a>
              
-             <a href="merchant.html" class="list-group-item list-group-item-action bg-light">
+             <a href="merchant.html" class="list-group-item list-group-item-action">
                <span class="fa mrdef"><img class="re-ic" src="assets/icons/messenger.svg" /></span> <span class="h-colll">Merchants</span>
              </a>
-             <a href="bank.html" class="list-group-item list-group-item-action bg-light">
+             <a href="bank.html" class="list-group-item list-group-item-action active">
                <span class="fa mrdef"><img class="re-ic" src="assets/icons/bank.svg" /></span> <span class="h-colll">Banks</span>
              </a>
-             <a href="#" class="list-group-item list-group-item-action bg-light">
+             <a href="#" class="list-group-item list-group-item-action">
                <span class="fa mrdef"><img class="re-ic" src="assets/icons/help.svg" /></span> <span class="h-colll">Help</span>
              </a>
            </div>
@@ -292,7 +292,7 @@
             
                              <div class="flex flex-wrap -mx-3 justify-end mb-10">
                                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                                 <button class="bg-green-500 hover:bg-green-600 hover:shadow-lg modal-open focus:bg-secondary text-secondary font-bold w-full py-3 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                                 <button data-toggle="modal"  data-target="#bankotpModal" class="bg-green-500 hover:bg-green-600 hover:shadow-lg focus:bg-secondary text-secondary font-bold w-full py-3 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                                    UPDATE BANK
                                  </button>  
                                </div>
@@ -301,52 +301,33 @@
             
                             </form>
                                     <!--Modal-->
-            <div class="modal .z-ind-modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
-            <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-            
-            <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-            
-            <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-            <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-            </svg>
-            <span class="text-sm">(Esc)</span>
-            </div>
-            
-            <!-- Add margin if you want to see some of the overlay behind the modal-->
-            <div class="modal-content py-4 text-left px-6">
-            <!--Title-->
-            <div class="flex justify-between items-center pb-3">
-            <p class="text-2xl font-bold"> </p>
-            <div class="modal-close cursor-pointer z-50">
-            <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-            </svg>
-            </div>
-            </div>
-            
-            <!--Body-->
-            <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3 mt-5">
-            <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-            OTP
-            </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
-            
-            </div>
-            
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-6 justify-end">
-            <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-            <button class="bg-green-500 hover:text-gray-100 modal-open focus:bg-secondary text-gray-200 font-bold w-full py-3 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-             Confirm
-            </button>   
-            </div>
-            </div>
-            
-            </div>
-            </div>
-            </div>
+                                    <div class="modal fade" id="bankotpModal" tabindex="-1" role="dialog" aria-labelledby="bankotpLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                         
+                                          <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div class="w-full px-3 mt-5">
+                                              <h3 class="mb-4 text-xl font-bold">Enter the OTP sent to your registered phone number</h3>
+                                              <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                                OTP
+                                              </label>
+                                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+                                              
+                                             </div>
+                                            <div class="row m-0 justify-end px-3">
+                                              <button data-dismiss="modal" class="bg-green-500 mt-4 hover:text-gray-100 focus:bg-secondary text-gray-200 font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                                                Confirm
+                                              </button>  
+                                            </div>
+
+                                          </div>
+                                         
+                                        </div>
+                                      </div>
+                                    </div>  
                         </div>
               
                      </div>
@@ -380,73 +361,72 @@
 
 
 
-     <footer class="bg-primary ">
-      <div class="container-fluid mx-auto mt-8">
-        <div class="w-full flex flex-wrap md:flex-row pt-16">
-          <div class="w-1/2 md:w-1/4 sm:w-1/2 mb-6 px-4">
-            <a class="text-orange-600 no-underline hover:no-underline font-bold mb-5 text-2xl lg:text-4xl" href="#">
-               <img style="width: 150px;" src="assets/img/logo-white.png" /> 
-            </a>
-           <div class="mx-auto mt-5">
-            <i class="fa fa-facebook text-white fa-2x ml-3 mr-2"></i>
-            <i class="fa fa-instagram text-white fa-2x ml-3 mr-2"></i>
-            <i class="fa fa-twitter text-white fa-2x ml-3 mr-2"></i>
-           </div>
-          </div>
-
-          <div class="w-1/2 md:w-1/4 sm:w-1/2 px-4">
-            <p class="uppercase font-extrabold text-gray-100 md:mb-6">Links</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">FAQ</a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">Help</a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">Support</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-1/2 md:w-1/4 sm:w-1/2 px-4">
-            <p class="uppercase font-extrabold text-gray-100 md:mb-6">Legal</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">Terms</a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">Privacy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-1/2 md:w-1/4 sm:w-1/2 px-4">
-            <p class="uppercase font-extrabold text-gray-100 md:mb-6">Contact us</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">lagos@winwinnaija.com</a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">+234 708 387 1921</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="w-full flex flex-col md:flex-row py-4">
-         <div class="flex-1 text-center">
-            <a href="#" class="font-light no-underline text-xs text-gray-400 hover:text-orange-500"> © 2020 Discomfort</a>
-         </div>
-        </div>
-
-      </div>
-    </footer>
+         <footer class="bg-primary ">
+          <div class="container mx-auto mt-8">
+            <div class="w-full flex flex-wrap md:flex-row pt-16">
+              <div class="w-full lg:w-1/4 md:w-1/4 sm:w-1/2 mb-6 px-4">
+                <a class="text-orange-600 no-underline hover:no-underline font-bold mb-5 text-2xl lg:text-4xl" href="#">
+                   <img style="width: 150px;" src="assets/img/logo-white.png" /> 
+                </a>
+               <div class="mx-auto mt-5">
+                <i class="fa fa-facebook text-white fa-2x ml-3 mr-2"></i>
+                <i class="fa fa-instagram text-white fa-2x ml-3 mr-2"></i>
+                <i class="fa fa-twitter text-white fa-2x ml-3 mr-2"></i>
+               </div>
+              </div>
     
-
+              <div class="w-full lg:w-1/4 md:w-1/4 sm:w-1/2 px-4">
+                <p class="uppercase font-extrabold text-gray-100 md:mb-6">Links</p>
+                <ul class="list-reset mb-6">
+                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">FAQ</a>
+                  </li>
+                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">Help</a>
+                  </li>
+                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">Support</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-1/4 md:w-1/4 sm:w-1/2 px-4">
+                <p class="uppercase font-extrabold text-gray-100 md:mb-6">Legal</p>
+                <ul class="list-reset mb-6">
+                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">Terms</a>
+                  </li>
+                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">Privacy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-1/4 md:w-1/4 sm:w-1/2 px-4">
+                <p class="uppercase font-extrabold text-gray-100 md:mb-6">Contact us</p>
+                <ul class="list-reset mb-6">
+                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">lagos@winwinnaija.com</a>
+                  </li>
+                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a href="#" class="font-light no-underline text-gray-400 hover:text-orange-500 text-sm">+234 708 387 1921</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-full flex flex-col md:flex-row py-4">
+             <div class="flex-1 text-center">
+                <a href="#" class="font-light no-underline text-xs text-gray-400 hover:text-orange-500"> © 2020 Discomfort</a>
+             </div>
+            </div>
+ 
+          </div>
+        </footer>
  
  
 
   
        <script type="text/javascript" src="assets/js/jquery.js"></script>
        <script type="text/javascript" src="assets/js/slick.min.js"></script>
+       <script type="text/javascript" src="assets/js/bootstrap.js"></script>
        <script type="text/javascript" src='assets/js/main.js'></script>
        <script type="text/javascript" src='assets/js/custom.js'></script>
    </body>

@@ -555,9 +555,16 @@ a[data-toggle="collapse"] {
 .logo-size{
   width: 150px;
 }
+.table .thead-light th {
+  white-space: nowrap;
+}
 
-
-
+.merchantslide .slick-prev{
+  display: none!important;
+}
+.merchantslide .slick-next {
+  right: -65px;
+}
 #wrapper {
   overflow-x: hidden;
 }

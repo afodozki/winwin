@@ -4871,16 +4871,20 @@ a.badge-dark:focus {
     z-index: 1;
     color: #495057;
     text-decoration: none;
-    background-color: #f8f9fa;
+    background-color: #edf2f7;
 }
 .list-group-item-action:active {
     color: #212529;
-    background-color: #e9ecef;
+    background-color: #edf2f7;
+}
+.list-group-item-action .active {
+    color: #212529;
+    background-color: #edf2f7;
 }
 .list-group-item {
     position: relative;
     display: block;
-    padding: 1.25rem 1.25rem;
+    padding: 1rem 1.25rem;
     margin-bottom: -1px;
     background-color: #fff;
     /* border: 1px solid rgba(0, 0, 0, 0.125);*/
@@ -4902,9 +4906,9 @@ a.badge-dark:focus {
 }
 .list-group-item.active {
     z-index: 2;
-    color: #fff;
-    background-color: #131a44;
-    border-color: #131a44;
+/*    color: #fff;*/
+    background-color: #edf2f7;
+    border-color: #edf2f7;
 }
 .list-group-horizontal {
     -ms-flex-direction: row;
@@ -5045,8 +5049,9 @@ a.badge-dark:focus {
 .list-group-item-secondary.list-group-item-action:focus,
 .list-group-item-secondary.list-group-item-action:hover {
     color: #383d41;
-    background-color: #c8cbcf;
+    background-color: #edf2f7;
 }
+
 .list-group-item-secondary.list-group-item-action.active {
     color: #fff;
     background-color: #383d41;
@@ -5972,12 +5977,14 @@ button.bg-danger:hover {
 .bg-light {
     background-color: #ffffff !important;
 }
+/*
 a.bg-light:focus,
 a.bg-light:hover,
 button.bg-light:focus,
 button.bg-light:hover {
     background-color: #dae0e5 !important;
 }
+*/
 .bg-dark {
     background-color: #343a40 !important;
 }
