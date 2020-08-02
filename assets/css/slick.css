@@ -83,12 +83,12 @@
 }
 
 .slick-slide {
-    margin-left:27px;
+    margin-left: 26px;
   }
 
   /* the parent */
   .slick-list {
-    margin-left:-27px;
+    margin-left:-26px;
   }
 
 [dir='rtl'] .slick-slide

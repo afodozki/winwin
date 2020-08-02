@@ -91,7 +91,6 @@
     $('.adslide').slick({
       infinite: false,
       speed: 900,
-      infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       centerPadding:100,

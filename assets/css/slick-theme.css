@@ -66,7 +66,6 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
     font-size: 30px;
     line-height: 1;
     opacity: .75;
@@ -78,6 +77,7 @@
 .slick-prev
 {
     left: -35px;
+    right: auto;
 }
 [dir='rtl'] .slick-prev
 {
@@ -90,7 +90,16 @@
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    background-image: url(/assets/icons/arrow\ right\ alt.svg);
+    width: 50px;
+    height: 50px;
+}
+
+[dir='rtl'] .slick-next:before
+{
+    background-image: url(/assets/icons/arrow\ left\ alt.svg);
+    width: 50px;
+    height: 50px;
 }
 
 .slick-next
@@ -105,10 +114,13 @@
 .slick-next:before
 {
     content: '→';
+    
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    background-image: url(/assets/icons/arrow\ right\ alt.svg);
+ width: 50px;
+ height: 50px;
 }
 
 /* Dots */

@@ -1702,6 +1702,28 @@ pre code {
 }
 @media (max-width: 767.98px) {
 
+    .slick-prev:before {
+        padding: 5px;
+        background: #fff;
+    }
+    .slick-next:before {
+        padding: 5px;
+        background: #fff;
+    }
+    .slick-prev {
+        left: 0px!important;
+        right: auto;
+    }
+    .slick-next {
+        right: 16px!important;
+        left: auto;
+    }
+#menu-toggle{
+    position: absolute;
+    left: 10px;
+    background: #fff;
+    z-index: 99;
+}
     .bg-relogin{
 
         background-image:
@@ -2275,8 +2297,8 @@ textarea.form-control.is-invalid {
 }
 .btn.focus,
 .btn:focus {
-/*    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);*/
+    outline: 0;
+    box-shadow: none;
 }
 .btn.disabled,
 .btn:disabled {
