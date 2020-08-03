@@ -1748,12 +1748,17 @@ pre code {
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center bottom;
+          min-height: 100vh;
           min-height: 100%!important;
+          overflow: visible;
+          
       }
       .text-secondary-resp{
           color:#f7ef22;
       }
-
+.text-light-resp{
+    color:#f5f4e7;
+}
 
     .table-responsive-md {
         display: block;
