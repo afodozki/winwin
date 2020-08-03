@@ -1748,8 +1748,7 @@ pre code {
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center bottom;
-          min-height: 100%!important;
-          min-height: 100vh!important;
+          height: 100vh;
           overflow: hidden;
       }
 .bg-signup{
