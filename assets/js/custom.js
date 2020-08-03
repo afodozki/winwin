@@ -48,15 +48,13 @@
    /** Odds slider**/
    $(document).ready(function(){
     $('.oddslide').slick({
-      speed: 900,
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
-      centerPadding:100,
       autoplay: true,
-      autoplaySpeed: 12000,
       dots: true,
   arrows:false,
+  infinite: true,
       
 
       responsive: [
@@ -95,15 +93,13 @@
     });
     //adslide
     $('.adslide').slick({
-      infinite: false,
+      infinite: true,
       speed: 900,
       slidesToShow: 1,
       slidesToScroll: 1,
-      centerPadding:100,
       autoplay: true,
-  autoplaySpeed: 4000,
-  dots: true,
-  arrows:false,
+      dots: true,
+      arrows:false,
 
       responsive: [
         {
@@ -188,9 +184,8 @@ $('.adslided').slick({
 
     //trendind slides
     $('.trendingslide').slick({
-      infinite: false,
-      speed: 900,
       infinite: true,
+      speed: 900,
       slidesToShow: 4,
       slidesToScroll: 1,
       centerPadding:100,
@@ -236,9 +231,8 @@ $('.adslided').slick({
 
         //trendind slides
         $('.upcomingslide').slick({
-          infinite: false,
-          speed: 900,
           infinite: true,
+          speed: 900,
           slidesToShow: 2,
           slidesToScroll: 1,
           centerPadding:100,
@@ -284,9 +278,8 @@ $('.adslided').slick({
 
           //thisweek slides
           $('.thisweekslide').slick({
-            infinite: false,
-            speed: 900,
             infinite: true,
+            speed: 900,
             slidesToShow: 4,
             slidesToScroll: 1,
             centerPadding:100,
@@ -332,9 +325,8 @@ $('.adslided').slick({
           
                     //merchantslide slides
                     $('.merchantslide').slick({
-                      infinite: false,
-                      speed: 900,
                       infinite: true,
+                      speed: 900,
                       slidesToShow: 3,
                       slidesToScroll: 1,
                       centerPadding:100,

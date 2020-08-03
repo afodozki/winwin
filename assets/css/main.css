@@ -329,7 +329,11 @@ table td {
   
   /*  End Toggle Switch  */
 
-
+.ic-msize{
+  width: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
 /* container checkbox*/
 .container-checkbox {
     display: block;
