@@ -55,6 +55,8 @@
       centerPadding:100,
       autoplay: true,
       autoplaySpeed: 12000,
+      dots: true,
+  arrows:false,
       
 
       responsive: [
@@ -64,20 +66,25 @@
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
+            dots: true,
+            arrows:false,
           }
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
+            dots: true,
+            arrows:false,
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
+            dots: true,
+            arrows:false,
             slidesToScroll: 1
           }
         }
@@ -95,6 +102,8 @@
       centerPadding:100,
       autoplay: true,
   autoplaySpeed: 4000,
+  dots: true,
+  arrows:false,
 
       responsive: [
         {
@@ -103,6 +112,7 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
+            arrows:false,
             dots: true
           }
         },
@@ -110,13 +120,15 @@
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows:false,
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
+            arrows:false,
             slidesToScroll: 1
           }
         }
@@ -133,7 +145,7 @@ $('.adslided').slick({
   speed: 900,
   slidesToShow: 1,
   slidesToScroll: 1,
-  dots: false,
+  dots: true,
   arrows:false,
   autoplay: true,
   autoplaySpeed: 2500,
@@ -145,21 +157,26 @@ $('.adslided').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: true,
+        arrows:false,
       }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true,
+        arrows:false,
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true,
+        arrows:false,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -179,6 +196,8 @@ $('.adslided').slick({
       centerPadding:100,
       autoplay: true,
       autoplaySpeed: 8000,
+      dots: true,
+      arrows:false,
 
       responsive: [
         {
@@ -187,21 +206,26 @@ $('.adslided').slick({
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
+            dots: true,
+            arrows:false,
           }
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
+            dots: true,
+            arrows:false,
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots: true,
+            arrows:false,
           }
         }
         // You can unslick at a given breakpoint now by adding:
@@ -220,6 +244,8 @@ $('.adslided').slick({
           centerPadding:100,
           autoplay: true,
           autoplaySpeed: 13000,
+          dots: true,
+          arrows:false,
     
           responsive: [
             {
@@ -228,21 +254,26 @@ $('.adslided').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: true,
+                arrows:false,
               }
             },
             {
               breakpoint: 600,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true,
+                arrows:false,
               }
             },
             {
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true,
+                arrows:false,
               }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -261,6 +292,8 @@ $('.adslided').slick({
             centerPadding:100,
             autoplay: true,
             autoplaySpeed: 16000,
+            dots: true,
+            arrows:false,
       
             responsive: [
               {
@@ -269,21 +302,26 @@ $('.adslided').slick({
                   slidesToShow: 3,
                   slidesToScroll: 3,
                   infinite: true,
-                  dots: true
+                  dots: true,
+                  arrows:false,
                 }
               },
               {
                 breakpoint: 600,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 2
+                  slidesToScroll: 2,
+                  dots: true,
+                  arrows:false,
                 }
               },
               {
                 breakpoint: 480,
                 settings: {
                   slidesToShow: 1,
-                  slidesToScroll: 1
+                  slidesToScroll: 1,
+                  dots: true,
+                  arrows:false,
                 }
               }
               // You can unslick at a given breakpoint now by adding:
@@ -302,6 +340,8 @@ $('.adslided').slick({
                       centerPadding:100,
                       autoplay: true,
                       autoplaySpeed: 20000,
+                      dots: true,
+                      arrows:false,
                 
                       responsive: [
                         {
@@ -310,13 +350,16 @@ $('.adslided').slick({
                             slidesToShow: 3,
                             slidesToScroll: 3,
                             infinite: true,
-                            dots: true
+                            dots: true,
+                            arrows:false,
                           }
                         },
                         {
                           breakpoint: 600,
                           settings: {
                             slidesToShow: 2,
+                            dots: true,
+                            arrows:false,
                             slidesToScroll: 2
                           }
                         },
@@ -324,6 +367,8 @@ $('.adslided').slick({
                           breakpoint: 480,
                           settings: {
                             slidesToShow: 1,
+                            dots: true,
+                            arrows:false,
                             slidesToScroll: 1
                           }
                         }
