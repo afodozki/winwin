@@ -1748,11 +1748,14 @@ pre code {
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center bottom;
-          min-height: 100vh;
           min-height: 100%!important;
-          overflow: visible;
-          
+          min-height: 100vh!important;
+          overflow: hidden;
       }
+.bg-signup{
+    display: none;
+}      
+
       .text-secondary-resp{
           color:#f7ef22;
       }
