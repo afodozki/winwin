@@ -421,6 +421,12 @@ table td {
  border-radius: 0px 0px 5px 5px!important;
 }
 
+.listgroup .h-colll{
+font-size: 15px;
+
+}
+
+
 /****Collapse****/
 .re-fixedtop{
   position: fixed;
