@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+html {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.5
+}
 
 .container {
   width: 100%;
@@ -24,6 +29,13 @@
 @media (min-width: 1200px) {
   .container {
       max-width: 1140px;
+  }
+}
+@media (max-width: 767.98px) {
+
+  .px-5-responsive{
+      padding-left: 3rem !important;
+      padding-right: 3rem !important;
   }
 }
 .container-fluid {
@@ -546,7 +558,13 @@ a[data-toggle="collapse"] {
 }
 
 
-
+.bg-signup{
+  background-image:url('/assets/img/bg-signup.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}  
 
 
 .logo-size{
