@@ -1703,9 +1703,11 @@ pre code {
 .inline-b-resp{
     display:flex
 }
-
+/*Responsive*/
 @media (max-width: 767.98px) {
-
+    .p-card-resp{
+        padding: .25rem !important;
+      }
     .px-5-responsive{
         padding-left: 3rem !important;
         padding-right: 3rem !important;

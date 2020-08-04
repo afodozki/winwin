@@ -436,7 +436,9 @@ table td {
 font-size: 15px;
 
 }
-
+.p-card-resp{
+  padding: 1rem;
+}
 
 /****Collapse****/
 .re-fixedtop{
