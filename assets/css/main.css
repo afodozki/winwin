@@ -413,7 +413,7 @@ table td {
   background-size: cover;
     background-position: top center;
     background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.1) 20%, rgba(68, 36, 99, 1.93) 100%), url(/assets/img/img-oddback1.jpg);
-    min-height: 300px;
+    min-height: 200px;
     border-radius:5px;
   }
 .bg-login{
