@@ -1703,10 +1703,13 @@ pre code {
 .inline-b-resp{
     display:flex
 }
-/*Responsive*/
+/*Afo Responsive*/
 @media (max-width: 767.98px) {
+    .text-l{
+        font-size: 13px!important;
+      }
     .resize-ic {
-        width: 70px!important;
+        width: 40px!important;
         margin: 25% auto 0% auto!important;
         border-radius: 5px;
     }

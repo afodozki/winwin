@@ -51,7 +51,15 @@ html {
   margin-left: auto;
 }
 
-
+.text-l{
+  font-size: 15px!important;
+}
+.text-xl{
+  font-size: 17px!important;
+}
+.text-xs {
+  font-size: 12px;
+}
 .bg-primary{
     background: #131a44;
 }
@@ -424,7 +432,7 @@ table td {
   min-height: 100vh;
 }
 .resize-ic{
-  width: 70px!important;
+  width: 70px;
   margin: 50% auto 0% auto;
   border-radius: 5px;
 }    
@@ -680,3 +688,14 @@ padding-right: 5px!important;
 
 }
 
+@media (max-width: 767.98px) {
+  .text-l{
+      font-size: 13px!important;
+    }
+    .text-xl{
+      font-size: 15px!important;
+    }
+    .text-xs {
+      font-size: 10px!important;
+  }
+  }
