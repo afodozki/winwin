@@ -592,14 +592,22 @@ a[data-toggle="collapse"] {
 
 
 .bg-signup{
-  background-image:url('/assets/img/bg-signup.png');
+/*  background-image:url('/assets/img/bg-signup.png');*/
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     min-height: 100%;
     min-height: 100vh;
 }  
+.loginslide .slick-slide img {
+  display: block;
+  border-radius: 0px;
+}
 
+.loginslide .slick-dots{
+  position: absolute;
+    bottom: 90px!important;
+}
 
 .logo-size{
   width: 150px;
