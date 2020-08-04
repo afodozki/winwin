@@ -1705,6 +1705,11 @@ pre code {
 }
 /*Responsive*/
 @media (max-width: 767.98px) {
+    .resize-ic {
+        width: 70px!important;
+        margin: 25% auto 0% auto!important;
+        border-radius: 5px;
+    }
     .p-card-resp{
         padding: .25rem !important;
       }
