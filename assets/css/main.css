@@ -57,6 +57,9 @@ html {
 .text-xl{
   font-size: 17px!important;
 }
+.text-xltitle-resp{
+  font-size: 20px!important;
+}
 .text-xs {
   font-size: 12px;
 }
@@ -695,7 +698,10 @@ padding-right: 5px!important;
 
 
 }
-
+.m-0-15-resp{
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
 @media (max-width: 767.98px) {
   .text-l{
       font-size: 13px!important;
@@ -703,7 +709,18 @@ padding-right: 5px!important;
     .text-xl{
       font-size: 15px!important;
     }
+    .text-xltitle-resp{
+      font-size: 15px!important;
+    }
     .text-xs {
       font-size: 10px!important;
+  }
+  .p-lr-0-resp{
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+  .m-0-15-resp{
+    margin-left: -15px!important;
+    margin-right: -15px!important;
   }
   }
