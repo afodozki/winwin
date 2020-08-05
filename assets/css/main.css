@@ -350,6 +350,10 @@ table td {
   width: 20px;
   display: inline-block;
 }
+.ic-msize255{
+  width: 25px;
+  display: inline-block;
+}
 
 /* container checkbox*/
 .container-checkbox {
@@ -427,6 +431,13 @@ table td {
     min-height: 200px;
     border-radius:5px;
   }
+  .bg-grad-trending{
+    background-size: cover;
+      background-position: top center;
+      background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.1) 10%, rgba(19, 26, 68, 1.93) 100%), url(/assets/img/img-oddback1.jpg);
+      max-height: 150px;
+      border-radius:5px;
+    }
 .bg-login{
   background-image: url(/assets/img/live-action.jpg);
   background-size: contain;
@@ -435,10 +446,15 @@ table td {
   min-height: 100vh;
 }
 .resize-ic{
-  width: 70px;
+  width: 50px;
   margin: 50% auto 0% auto;
   border-radius: 5px;
 }    
+.resizetrend-ic {
+  width: 40px;
+  margin: 3% auto 0% auto;
+  border-radius: 5px;
+}
 .adslide .slick-slide img{
  border-radius: 0px 0px 5px 5px!important;
 }
@@ -448,7 +464,7 @@ font-size: 15px;
 
 }
 .p-card-resp{
-  padding: 1rem;
+  padding: .7rem;
 }
 
 /****Collapse****/
@@ -703,6 +719,14 @@ padding-right: 5px!important;
   margin-right: 0!important;
 }
 @media (max-width: 767.98px) {
+
+.img-logo-mobile{
+  width: 90%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
   .text-l{
       font-size: 13px!important;
     }

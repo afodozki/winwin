@@ -1,7 +1,18 @@
 $(document).ready(function(){
-  if(window.innerWidth < 640){
+  if(window.innerWidth < 767){
     $('.oddslide-mobile').removeClass('oddslide');
-  }
+  };
+
+  if(window.innerWidth < 767){
+    $('.trendingslide-mobile').removeClass('trendingslide');
+  };
+
+  if(window.innerWidth < 767){
+    $('.thisweekslide-mobile').removeClass('thisweekslide');
+  };
+
+  
+
 });
          
    /** Odds slider**/
