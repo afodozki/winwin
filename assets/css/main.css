@@ -604,10 +604,18 @@ a[data-toggle="collapse"] {
 }
 .footer-sidelist{
   bottom: 0;
+  display: none;
 }
 .min-h-90{
   min-height: 90%!important;
 }
+
+
+.overflow-x {
+  overflow-x: hidden;
+}
+
+
 
 
 .bg-signup{

@@ -172,7 +172,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 26px;
     line-height: 20px;
 
     position: absolute;
@@ -185,8 +185,8 @@
     content: '•';
     text-align: center;
 
-    opacity: .25;
-    color: black;
+    opacity: .75;
+    color: #131a44;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -194,14 +194,14 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #f7ef22;
 }
 
 /*Login slide*/
 .loginslide .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 12px;
+    font-size: 22px;
     line-height: 20px;
 
     position: absolute;
