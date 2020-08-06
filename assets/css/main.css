@@ -736,14 +736,27 @@ padding-right: 5px!important;
   padding-top: 0.5rem;
 }
 
+.text-right-res{
+  text-align: right;
+}
 
 @media (min-width: 320px) and (max-width: 480px){
-
+  .text-right-res{
+    text-align: left;
+  }
+  .-mt-2 {
+    margin-top: .7rem;
+}
 
 }
 @media (min-width: 481px) and (max-width: 768px){
 
-
+  .text-right-res{
+    text-align: left;
+  }
+  .-mt-2 {
+    margin-top: .7rem;
+}
 }
 @media (min-width: 769px) and (max-width: 1024px){
 
