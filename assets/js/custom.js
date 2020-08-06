@@ -43,6 +43,7 @@ $(document).ready(function(){
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            infinite: true,
             dots: true,
             arrows:false,
           }
@@ -51,6 +52,7 @@ $(document).ready(function(){
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
+            infinite: true,
             dots: true,
             arrows:false,
             slidesToScroll: 1
@@ -87,6 +89,7 @@ $(document).ready(function(){
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            infinite: true,
             arrows:false,
           }
         },
@@ -94,6 +97,7 @@ $(document).ready(function(){
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
+            infinite: true,
             arrows:false,
             slidesToScroll: 1
           }
@@ -130,6 +134,7 @@ $('.loginslide').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        infinite: true,
         arrows:false,
       }
     },
@@ -138,6 +143,7 @@ $('.loginslide').slick({
       settings: {
         slidesToShow: 1,
         arrows:false,
+        infinite: true,
         slidesToScroll: 1
       }
     }
@@ -152,7 +158,7 @@ $('.loginslide').slick({
 
 //adslided
 $('.adslided').slick({
-  infinite: false,
+  infinite: true,
   speed: 900,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -178,6 +184,7 @@ $('.adslided').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
+        infinite: true,
         arrows:false,
       }
     },
@@ -187,6 +194,7 @@ $('.adslided').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
+        infinite: true,
         arrows:false,
       }
     }
@@ -225,6 +233,7 @@ $('.adslided').slick({
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            infinite: true,
             dots: true,
             arrows:false,
           }
@@ -234,6 +243,7 @@ $('.adslided').slick({
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            infinite: true,
             dots: true,
             arrows:false,
           }
@@ -272,6 +282,7 @@ $('.adslided').slick({
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
+                infinite: true,
                 dots: true,
                 arrows:false,
               }
@@ -281,6 +292,7 @@ $('.adslided').slick({
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                infinite: true,
                 dots: true,
                 arrows:false,
               }
@@ -319,6 +331,7 @@ $('.adslided').slick({
                 settings: {
                   slidesToShow: 2,
                   slidesToScroll: 2,
+                  infinite: true,
                   dots: true,
                   arrows:false,
                 }
@@ -328,6 +341,7 @@ $('.adslided').slick({
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
+                  infinite: true,
                   dots: true,
                   arrows:false,
                 }
@@ -365,6 +379,7 @@ $('.adslided').slick({
                           breakpoint: 600,
                           settings: {
                             slidesToShow: 2,
+                            infinite: true,
                             dots: true,
                             arrows:false,
                             slidesToScroll: 2
@@ -374,6 +389,7 @@ $('.adslided').slick({
                           breakpoint: 480,
                           settings: {
                             slidesToShow: 1,
+                            infinite: true,
                             dots: true,
                             arrows:false,
                             slidesToScroll: 1
