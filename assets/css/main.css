@@ -735,6 +735,26 @@ padding-right: 5px!important;
 .pt-2-resp-m{
   padding-top: 0.5rem;
 }
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+
+}
+@media (min-width: 481px) and (max-width: 768px){
+
+
+}
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+@media (min-width: 1025px) and (max-width: 1200px){
+
+}
+@media (min-width: 1025px){
+
+}
+
 @media (max-width: 767.98px) {
   .pt-2-resp-m{
     padding-top: 0rem!important;
