@@ -356,13 +356,13 @@ $('.adslided').slick({
                     $('.merchantslide').slick({
                       infinite: true,
                       speed: 900,
-                      slidesToShow: 3,
+                      slidesToShow: 4,
                       slidesToScroll: 1,
                       centerPadding:100,
                       autoplay: true,
                       autoplaySpeed: 20000,
                       dots: true,
-                      arrows:false,
+                      arrows:true,
                 
                       responsive: [
                         {
