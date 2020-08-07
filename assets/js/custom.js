@@ -10,6 +10,9 @@ $(document).ready(function(){
   if(window.innerWidth < 767){
     $('.thisweekslide-mobile').removeClass('thisweekslide');
   };
+  if(window.innerWidth < 767){
+    $('.merchantslide-mobile').removeClass('merchantslide');
+  };
 
   
 
@@ -356,7 +359,7 @@ $('.adslided').slick({
                     $('.merchantslide').slick({
                       infinite: true,
                       speed: 900,
-                      slidesToShow: 4,
+                      slidesToShow: 3,
                       slidesToScroll: 1,
                       centerPadding:100,
                       autoplay: true,
@@ -378,7 +381,7 @@ $('.adslided').slick({
                         {
                           breakpoint: 600,
                           settings: {
-                            slidesToShow: 2,
+                            slidesToShow: 3,
                             infinite: true,
                             dots: true,
                             arrows:false,
@@ -388,7 +391,7 @@ $('.adslided').slick({
                         {
                           breakpoint: 480,
                           settings: {
-                            slidesToShow: 1,
+                            slidesToShow: 3,
                             infinite: true,
                             dots: true,
                             arrows:false,
