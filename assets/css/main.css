@@ -173,7 +173,12 @@ table td {
   .pr-6 {
     padding-right: 4rem !important;
 }
-
+button{
+  transition: .5s;
+}
+a {
+  transition: 0.3s;
+}
   /*****Toogle switches******/
   
   .toggleSwitch span span {
