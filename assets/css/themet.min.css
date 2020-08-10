@@ -8209,7 +8209,7 @@ video {
 }
 
 .text-black {
-    color: #000
+    color: #060A1F
 }
 
 .text-white {
@@ -9361,6 +9361,9 @@ video {
 }
 .text-65xl {
     font-size: 5rem
+}
+.text-9xl {
+    font-size: 9rem;
 }
 
 .italic {

@@ -1,8 +1,83 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+
+/**Font Norwester**/
+@font-face {
+  font-family: 'Norwester Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Norwester Regular'), url('/assets/fonts/norwester.woff') format('woff');
+  }
+
+/**Font Homepage**/
+@font-face {
+  font-family: 'Morganite';
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Morganite Black'), local('Morganite-Black'), url(/assets/fonts/Morganite-ExtraBold.ttf) format('ttf');  
+}
+@font-face {
+  font-family: 'Morganite';
+  font-style: black;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Morganite Black'), local('Morganite-Black'), url(/assets/fonts/Morganite-Black.ttf) format('ttf');  
+}
+@font-face {
+  font-family: 'Morganite';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Morganite Black'), local('Morganite-Black'), url(/assets/fonts/Morganite-Bold.ttf) format('ttf');  
+}
+@font-face {
+  font-family: 'Morganite';
+  font-style: bold;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Morganite Black'), local('Morganite-Black'), url(/assets/fonts/Morganite-Book.ttf) format('ttf');  
+}
+@font-face {
+  font-family: 'Morganite';
+  font-style:  extra-light;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Morganite Black'), local('Morganite-Black'), url(/assets/fonts/Morganite-ExtraLight.ttf) format('ttf');  
+}
+@font-face {
+  font-family: 'Morganite';
+  font-style:  light;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Morganite Black'), local('Morganite-Black'), url(/assets/fonts/Morganite-Light.ttf) format('ttf');  
+}
+@font-face {
+  font-family: 'Morganite';
+  font-style:  regular;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Morganite Black'), local('Morganite-Black'), url(/assets/fonts/Morganite-Medium.ttf) format('ttf');  
+}
+@font-face {
+  font-family: 'Morganite';
+  font-style:  regular;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Morganite Black'), local('Morganite-Black'), url(/assets/fonts/Morganite-SemiBold.ttf) format('ttf');  
+}
+
 html {
   font-family: 'Noto Sans', sans-serif;
-  line-height: 1.5
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+.font-morganite{
+  font-family: 'Morganite', sans-serif!important;
+}
+.font-norwester{
+  font-family: 'Norwester Regular', sans-serif!important;
 }
 
 .container {
@@ -88,11 +163,17 @@ html {
 .bg-secondary{
     background: #f7ef22;
 }
+.bg-secondary-h{
+  background: #fff200;
+}
 .navbar-nav .active{
   color: #f7ef22!important;
 }
 .text-secondary{
     color: #f7ef22;
+}
+.text-secondary-h{
+  color: #fff200;
 }
 .hover\:bg-secondary:hover {
     background: #d4ce11;
@@ -767,7 +848,7 @@ padding-right: 5px!important;
   padding-top: 0.8rem;
 }
 .bg-home-banner{
-  background-image: url(/assets/img/bg-homebanner.jpg);
+  background-image: linear-gradient(to bottom, rgba(11, 2, 38, 0.6), rgba(11, 2, 38, 0.6)), url(/assets/img/bg-homebanner.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -790,16 +871,16 @@ padding-right: 5px!important;
   background-attachment: fixed;
 }
 .bg-home-screen{
-  background-image: url(/assets/img/bg-homescreen.jpg);
+  background-image: url(/assets/img/bg-homescreen.webp);
   background-size: cover;
-  background-position: center;
+  background-position: contain;
   min-height: 100vh;
+  background-attachment: fixed;
 }
 .bg-gameclass{
   background-image: url(/assets/img/bg-gameclass.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
 }
 .font-w-100{
   font-weight: 100!important;
