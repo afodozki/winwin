@@ -420,7 +420,7 @@ video {
 }
 
 .bg-black {
-    background-color: #000
+    background-color: #060A1F
 }
 
 .bg-white {
@@ -9358,6 +9358,9 @@ video {
 
 .text-6xl {
     font-size: 4rem
+}
+.text-65xl {
+    font-size: 5rem
 }
 
 .italic {

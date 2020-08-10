@@ -67,6 +67,9 @@ html {
 .bg-primary{
     background: #131a44;
 }
+.bg-primary-dark{
+  background: #0c0326;
+}
 .bg-primary-alt{
     background: #293b91;
 }
@@ -84,6 +87,9 @@ html {
 }
 .bg-secondary{
     background: #f7ef22;
+}
+.navbar-nav .active{
+  color: #f7ef22!important;
 }
 .text-secondary{
     color: #f7ef22;
@@ -766,6 +772,23 @@ padding-right: 5px!important;
   background-position: center;
   min-height: 100vh;
 }
+.bg-about-banner{
+  background-image:
+  linear-gradient(to bottom, rgba(6, 10, 31, 0.92), rgba(6, 10, 31, 0.93)),
+  url('/assets/img/bg-aboutbanner.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.bg-homegames{
+  background-image:
+  linear-gradient(to bottom, rgba(6, 10, 31, 0.92), rgba(6, 10, 31, 0.93)),
+  url('/assets/img/bg-homegames.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
 .bg-home-screen{
   background-image: url(/assets/img/bg-homescreen.jpg);
   background-size: cover;
@@ -799,6 +822,7 @@ padding-right: 5px!important;
 .radius-5{
   border-radius: 5px;
 }
+
 @media (min-width: 320px) and (max-width: 480px){
   .text-right-res{
     text-align: left;
