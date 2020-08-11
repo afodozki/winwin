@@ -779,12 +779,13 @@ min-width: 100vw;
 #wrapper.toggled #sidebar-wrapper {
 margin-left: 0;
 }
-
+#wrapper .mrdef {
+  margin-right: 10px;
+      }
 @media (min-width: 768px) {
 #sidebar-wrapper {
   margin-left: 0;
 }
-
 
 #page-content-wrapper {
   min-width: 0;
@@ -851,7 +852,7 @@ padding-right: 5px!important;
   background-image: linear-gradient(to bottom, rgba(11, 2, 38, 0.6), rgba(11, 2, 38, 0.6)), url(/assets/img/bg-homebanner.jpg);
   background-size: cover;
   background-position: center top;
-  min-height: 100vh;
+
 }
 .bg-about-banner{
   background-image:
@@ -903,6 +904,9 @@ padding-right: 5px!important;
 .radius-5{
   border-radius: 5px;
 }
+.vh-100-bigh {
+  height: 100vh !important;
+}
 
 @media (min-width: 320px) and (max-width: 480px){
   .text-right-res{
@@ -931,8 +935,41 @@ padding-right: 5px!important;
 @media (min-width: 1025px){
 
 }
-
+@media (min-width: 1625px){
+  .vh-100-bigh {
+    height: 50vh!important;
+}
+}
 @media (max-width: 767.98px) {
+
+  .bg-home-banner .text-9xl {
+    font-size: 4rem!important;
+    line-height: normal;
+  }
+  .text-2xl-resp {
+    font-size: 1rem
+}
+.tierslide .p-4{
+padding: 1.5rem 0rem!important;
+}
+.bg-home-banner .text-65xl {
+    font-size: 4rem;
+}
+.bg-home-banner .text-6xl {
+  font-size: 4rem;
+}
+.bg-about-banner .text-65xl {
+  font-size: 4rem;
+}
+.bg-about-banner .text-6xl {
+  font-size: 3rem;
+}
+.bg-about-banner p {
+  font-size: 12px;
+}
+.sec-winmore .text-66xl{
+  font-size: 3rem;
+}
   .pt-2-resp-m{
     padding-top: 0rem!important;
   }
