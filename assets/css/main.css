@@ -850,7 +850,7 @@ padding-right: 5px!important;
 .bg-home-banner{
   background-image: linear-gradient(to bottom, rgba(11, 2, 38, 0.6), rgba(11, 2, 38, 0.6)), url(/assets/img/bg-homebanner.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   min-height: 100vh;
 }
 .bg-about-banner{
