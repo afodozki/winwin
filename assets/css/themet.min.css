@@ -420,7 +420,7 @@ video {
 }
 
 .bg-black {
-    background-color: #060A1F
+    background-color: #0B0226
 }
 
 .bg-white {
@@ -9344,7 +9344,7 @@ video {
     font-size: 1.5rem
 }
 .text-2xl-resp {
-    font-size: 1.5rem
+    font-size: 1.65rem;
 }
 
 .text-3xl {

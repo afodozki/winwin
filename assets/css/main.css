@@ -1,5 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 
 /**Font Norwester**/
@@ -78,6 +80,9 @@ html {
 }
 .font-norwester{
   font-family: 'Norwester Regular', sans-serif!important;
+}
+.font-poppins{
+  font-family: 'Poppins', sans-serif!important;
 }
 
 .container {
@@ -179,7 +184,13 @@ html {
     background: #d4ce11;
 }
 .hover\:bg-primary:hover {
-    background: #111841;
+    background: #0B0226;    
+}
+.hover\:border-btn:hover {
+border: 1px solid #fafafa!important;
+}
+.hover\:text-secondary:hover {
+  color: #fff200!important;
 }
 .hover\:bg-secondary:focus {
 outline: none;
@@ -850,7 +861,7 @@ padding-right: 5px!important;
 }
 .bg-home-banner{
   background-image: linear-gradient(to bottom, rgba(11, 2, 38, 0.6), rgba(11, 2, 38, 0.6)), url(/assets/img/bg-homebanner.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center top;
 
 }
@@ -860,7 +871,7 @@ padding-right: 5px!important;
   url('/assets/img/bg-aboutbanner.webp');
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 100%;
 }
 .bg-homegames{
   background-image:
@@ -868,20 +879,25 @@ padding-right: 5px!important;
   url('/assets/img/bg-homegames.webp');
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 100%;
   background-attachment: fixed;
 }
 .bg-home-screen{
   background-image: url(/assets/img/bg-homescreen.webp);
-  background-size: cover;
+  background-color: #131a44;
+  background-size: contain;
   background-position: contain;
-  min-height: 100vh;
   background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 .bg-gameclass{
   background-image: url(/assets/img/bg-gameclass.jpg);
   background-size: cover;
   background-position: center;
+}
+.bd-btm-secondary{
+  border-bottom: 1px solid #fff200;
 }
 .font-w-100{
   font-weight: 100!important;
@@ -906,6 +922,9 @@ padding-right: 5px!important;
 }
 .vh-100-bigh {
   height: 100vh !important;
+}
+.bg-inp-dark{
+  background-color: rgba(45, 46, 45, 1)!important;
 }
 
 @media (min-width: 320px) and (max-width: 480px){
