@@ -860,8 +860,8 @@ padding-right: 5px!important;
   padding-top: 0.8rem;
 }
 .bg-home-banner{
-  background-image: linear-gradient(to bottom, rgba(11, 2, 38, 0.6), rgba(11, 2, 38, 0.6)), url(/assets/img/bg-homebanner.jpg);
-  background-size: contain;
+  background-image: linear-gradient(to bottom, rgba(11, 2, 38, 0.6), rgba(11, 2, 38, 0.6)), url(/assets/img/main-banner.jpg);
+  background-size: cover;
   background-position: center top;
 
 }
