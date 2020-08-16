@@ -984,7 +984,7 @@ padding: 1.5rem 0rem!important;
   font-size: 3rem;
 }
 .bg-about-banner p {
-  font-size: 12px;
+  width: 100%!important;
 }
 .sec-winmore .text-66xl{
   font-size: 3rem;
